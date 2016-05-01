@@ -11,7 +11,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
  */
 class UserDao
 {
-    const TABLE = 'sys_users';
+    const TABLE = 'users';
 
     public static function getAll()
     {

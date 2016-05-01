@@ -9,8 +9,9 @@ class IndexController extends Yaf\Controller_Abstract {
    }
 
     public function seAction() {
-        Yaf\Dispatcher::getInstance()->disableView();
-        $data = \dao\UserDao::getCount();
-        var_dump($data);
+        $count = \dao\UserDao::getCount();
+        \utils\LogUtil::getInstance()->addInfo('aaaaaa');
+        $this->getView()->assign('name', 'name');
+        $this->getView()->assign('count', $count);
     }
 }
