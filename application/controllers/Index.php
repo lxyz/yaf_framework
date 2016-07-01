@@ -3,15 +3,12 @@
 
 class IndexController extends Yaf\Controller_Abstract {
 
-   public function indexAction() {//默认Action
-       Yaf\Dispatcher::getInstance()->disableView();
-        echo 'indexController@indexAction';
-   }
+    public function indexAction() {//默认Action
 
-    public function seAction() {
-        $count = \dao\UserDao::getCount();
-        \utils\LogUtil::getInstance()->addInfo('aaaaaa');
-        $this->getView()->assign('name', 'name');
-        $this->getView()->assign('count', $count);
+    }
+    public function tAction() {
+        //zzk\commons\utils\ProfileUtil::startProfiling();
+        //var_dump((new \zzk\commons\dao\UserDao())->getCount());
+        //zzk\commons\utils\ProfileUtil::endProfiling();
     }
 }
