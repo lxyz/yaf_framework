@@ -34,4 +34,21 @@ api目录结构
          application.ini(配置文件, 代码相关配置)
          composer.json(第三方代码包依赖)
 
-
+nginx server配置
+    
+    server {
+        listen       80;
+        server_name  zzk.dev;
+        root /Users/lixiangyang/dev/work/zzk/zzk-api/public;
+        index index.php;
+        location / {
+            try_files $uri $uri/ /index.php?$query_string;
+        }
+        location ~ \.php$ {
+           fastcgi_pass   127.0.0.1:9000;
+           # fastcgi_pass unix:/usr/local/var/run/php-cgi.sock;
+           fastcgi_index  index.php;
+           fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_na    me;
+           include        fastcgi_params;
+        }
+    }
