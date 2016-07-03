@@ -8,5 +8,5 @@
  */
 require './console.php';
 function main($argc, $argv) {
-    var_dump(\dao\UserDao::getCount());
+    
 }

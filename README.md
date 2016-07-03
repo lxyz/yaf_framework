@@ -7,7 +7,7 @@
     pdo(数据库扩展)
     redis(redis扩展)
     amqp(基于amqp协议的消息队列如rabbitMQ)
-    基于composer管理的依赖代码包,如monolog(日志), modoo(数据库类)
+    基于composer管理的依赖代码包,如monolog(日志), medoo(数据库类)
 
 php.ini
 
@@ -48,7 +48,7 @@ nginx server配置
            fastcgi_pass   127.0.0.1:9000;
            # fastcgi_pass unix:/usr/local/var/run/php-cgi.sock;
            fastcgi_index  index.php;
-           fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_na    me;
+           fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
            include        fastcgi_params;
         }
     }
