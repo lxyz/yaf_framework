@@ -53,6 +53,10 @@ nginx server配置
         }
     }
 
+控制台任务
+    控制台任务目录在scripts目录下面， 引导文件是crontab目录下面的console.php
+    调用示例/path/to/php scripts/crontab/job.php 将调用job.php文件里job class的main方法
+
 
 
 
