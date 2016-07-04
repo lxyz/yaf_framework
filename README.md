@@ -54,10 +54,12 @@ nginx server配置
     }
 
 控制台任务
+
     控制台任务目录在scripts目录下面， 引导文件是crontab目录下面的console.php
     调用示例/path/to/php scripts/crontab/job.php 将调用job.php文件里job class的main方法
 
 单元测试
+
     单元测试依赖于codeception测试框架
     创建单元测试文件codecept generate:test unit Example
     执行单元测试codecept run unit
@@ -66,3 +68,9 @@ nginx server配置
 
 
 
+=======
+           fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_na    me;
+           include        fastcgi_params;
+        }
+    }
+>>>>>>> 33b26fb48bff1ea8dd6486cdc9650f630e3ae268
