@@ -63,14 +63,3 @@ nginx server配置
     单元测试依赖于codeception测试框架
     创建单元测试文件codecept generate:test unit Example
     执行单元测试codecept run unit
-
-
-
-
-
-=======
-           fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_na    me;
-           include        fastcgi_params;
-        }
-    }
->>>>>>> 33b26fb48bff1ea8dd6486cdc9650f630e3ae268
