@@ -9,6 +9,6 @@
 class ErrorController extends Yaf\Controller_Abstract {
 
     public function errorAction($exception) {
-        die(json_encode(['status' => "000", 'message'=>$exception->getMessage()]));
+        die(json_encode(['status' => $exception->getCode(), 'message'=>$exception->getMessage()]));
     }
 }
