@@ -65,5 +65,5 @@ nginx server配置
 单元测试
 
     单元测试依赖于codeception测试框架
-    创建单元测试文件codecept generate:test unit Example
+    创建单元测试文件codecept generate:test unit ExampleDao
     执行单元测试codecept run unit
